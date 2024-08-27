@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <title>Title</title>
+</head>
+<body>
+<h1>Danh sach khach hang</h1>
+<input id="firstName" placeholder="firstName">
+<input id="lastName" placeholder="lastName">
+<input id="province" placeholder="province">
+<button onclick="createNewCustomer()">Tao moi</button>
+<table border="1px">
+    <tr>
+        <th>id</th>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Province</th>
+        <th>Action</th>
+    </tr>
+    <tbody id="content">
+        <tr>
+            <td>1</td>
+            <td>Kieu Anh</td>
+            <td>Vu</td>
+            <td>Ha Nam</td>
+            <td><a>Delete</a></td>
+        </tr>
+    </tbody>
+</table>
+
+<script src="customer.js"></script>
+</body>
+</html>
