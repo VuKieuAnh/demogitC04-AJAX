@@ -13,6 +13,29 @@ function showAllCustomer() {
         }
     })
 }
+function findCustomer(name) {
+//     lay du lieu tu phia backend
+//     Tu khoa $.ajax
+    $.ajax({
+        // method
+        type: "GET",
+        // url
+        url: "http://localhost:8080/api/customers/search?name="+name,
+        // xu ly khi thanh cong
+        success: function (dulieu){
+        //     ve bang
+            showCustomers(dulieu);
+        }
+    })
+}
+
+function getCustomerByName() {
+//     lay du lieu
+    let name = document.getElementById("search").value;
+//     goi ham logic
+    findCustomer(name);
+
+}
 
 function showCustomers(dulieu) {
     let content="";
